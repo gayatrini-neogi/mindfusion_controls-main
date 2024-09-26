@@ -1,0 +1,102 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.top-tabs {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  position: relative; /* Allow for absolute positioning of sub-tabs if needed */
+}
+
+.canvas-container {
+  flex: 1;
+  position: relative;
+  padding-bottom: 100px; /* Add space for sub-tabs and bottom buttons */
+}
+
+.sidebar {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #e0e0e0;
+}
+
+.bottom-section {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Sub-tabs styles */
+.sub-tabs-container {
+  position: absolute; /* Position at the bottom of the canvas */
+  bottom: 60px; /* Adjust this value to move it further down */
+  left: 0; /* Align to the left of the canvas */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align sub-tabs to the left */
+  padding: 0 10px; /* Side padding for sub-tabs */
+}
+
+.sub-tabs {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+}
+
+.sheet-button {
+  margin-right: 5px; /* Space between buttons */
+  padding: 5px 10px; /* Button padding */
+  background-color: #d0d0d0; /* Default background */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.sheet-button.active {
+  background-color: #23cfed; /* Active state color */
+  color: white; /* Text color for active state */
+}
+
+/* Button hover effects */
+.sheet-button:hover {
+  background-color: #b0e0e6; /* Light color on hover */
+}
+
+/* Zoom controls styles */
+.zoom-controls {
+  display: flex;
+  justify-content: flex-start; /* Align zoom controls to the left */
+  align-items: center; /* Center vertically */
+}
+
+.zoom-btn {
+  margin-right: 5px; /* Space between zoom buttons */
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* File actions styling */
+.file-actions {
+  margin-top: 10px; /* Space between action buttons and file actions */
+}
+
+.draggable-image {
+  border: 1px dashed #ccc; /* Optional styling for visibility */
+}

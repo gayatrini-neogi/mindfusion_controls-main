@@ -1,0 +1,29 @@
+.sidebar-tools {
+  display: flex;
+  flex-direction: column; /* Stack tools vertically */
+  align-items: center; /* Center tools horizontally */
+  padding: 10px; /* Add padding around the sidebar */
+  background-color: #f0f0f0; /* Background color for the sidebar */
+  border-left: 2px solid #ccc; /* Optional: border for separation */
+  height: 100%; /* Full height of the parent container */
+}
+
+.tool-button {
+  display: flex;
+  align-items: center; /* Center items vertically within the button */
+  justify-content: center; /* Center items horizontally within the button */
+  width: 50px; /* Width of the buttons */
+  height: 50px; /* Height of the buttons */
+  margin: 5px 0; /* Space between buttons */
+  font-size: 24px; /* Increase font size for better visibility */
+  border: none; /* Remove default button border */
+  background-color: #c7dcf3; /* Button color */
+  color: white; /* Default text color */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.tool-button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}

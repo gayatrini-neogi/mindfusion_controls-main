@@ -1,0 +1,14 @@
+.diagram-panel {
+  position: relative; /* Allow absolutely positioned shapes */
+  width: 100%; /* Full width of the center panel */
+  height: calc(100vh - 60px); /* Adjust height based on your layout */
+  border: 1px solid #ccc; /* Optional: border for the panel */
+  overflow: hidden; /* Hide overflow if needed */
+  background-color: #ffffff; /* Background color for the panel */
+}
+
+.shapes-container {
+  position: relative; /* Position context for absolute shapes */
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,23 @@
+.shape {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Circle {
+    border-radius: 50%;
+  }
+  
+  .Square {
+    /* No additional styles needed */
+  }
+  
+  .Triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid black;
+  }
+  

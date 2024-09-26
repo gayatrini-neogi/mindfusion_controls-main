@@ -1,0 +1,31 @@
+.tabs-container {
+  display: flex;
+  flex-direction: column; /* Stack main tabs and sub-tabs vertically */
+  height: 100%; /* Ensure it takes the full height of the container */
+}
+
+.main-tabs {
+  display: flex;
+  justify-content: space-around; /* Space the main tabs evenly */
+  margin-bottom: 20px; /* Space between main tabs and sub-tabs */
+}
+
+.sub-tabs-horizontal {
+  display: flex;
+  flex-direction: row; /* Keep sub-tabs in a row */
+  justify-content: flex-start; /* Align sub-tabs to the left */
+  margin-top: auto; /* Push sub-tabs down to the bottom of the container */
+  padding-left: 10px; /* Add padding to the left */
+  padding-bottom: 20px; /* Add padding to the bottom to move it down */
+}
+
+.tab-button, .sheet-button {
+  padding: 10px; /* Padding for buttons */
+  margin: 5px; /* Space between buttons */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.active {
+  background-color: #007bff; /* Color for active tab */
+  color: white; /* Text color for active tab */
+}
