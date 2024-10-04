@@ -17,22 +17,17 @@ const SidebarTools = ({ onToolSelect }) => {
 
   return (
     <div className="sidebar-tools">
-      {tools.map((tool, index) => (
-        <button
-          key={index}
-          className="tool-button"
+      {tools.map(tool => (
+        <div 
+          key={tool.name} 
+          className="tool-box" 
+          onClick={() => onToolSelect(tool.name)} 
           title={tool.name}
-          onClick={() => {
-            if (onToolSelect) {
-              onToolSelect(tool.name);
-            } else {
-              console.error('onToolSelect is not defined');
-            }
-          }}
-          style={{ color: tool.color, fontSize: '24px' }} // Set the symbol color here
         >
-          {tool.symbol}
-        </button>
+          <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+            {tool.icon}
+          </svg>
+        </div>
       ))}
     </div>
   );
